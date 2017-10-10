@@ -1,0 +1,13 @@
+
+var word : string
+var totalwords : int := 1 
+
+loop
+    put "\n", "Please enter words one at a time seperated by the the Return key.".. put "and "..
+    colour(red) put ":)"..
+    colour (black) put "when done ".. 
+    get word
+    exit when word = ":)"
+    totalwords += 1
+end loop
+put "\n", "You inputed ", totalwords ," words."
