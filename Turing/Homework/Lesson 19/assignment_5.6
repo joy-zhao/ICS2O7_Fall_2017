@@ -1,0 +1,10 @@
+ put "Please input a series of marks and input a negative number when done"
+var mark : int
+var count, sum : int := 0
+loop
+    get mark
+    exit when mark < 0
+    count := count + 1
+    sum := sum + mark
+end loop
+put "The average mark of the inputed values is ", round (sum / count), "."
