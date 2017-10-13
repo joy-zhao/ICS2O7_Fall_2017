@@ -1,0 +1,12 @@
+var item_price_count : int := 0
+var item_1 : int
+put "When done, please enter 0"
+put "Please enter the price of one of your items "
+loop
+    get item_1
+    exit when item_1 = 0
+    item_price_count := item_1 + item_price_count
+end loop
+put "The GST total for your receipt is ", item_price_count * 0.08
+put "The HST total for your receipt is ", item_price_count * 0.05
+put "The total of your receipt is ", item_price_count * 1.13
