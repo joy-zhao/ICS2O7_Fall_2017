@@ -1,0 +1,23 @@
+const childsingle := 10.00
+const adultsingle := 5.00 
+const seniorsingle := 7.50 
+var childticketnumber, adultticketnumber, seniorticketnumber : int 
+var childtickettotal, adulttickettotal, seniortickettotal : int := 0
+put "Please enter a negative number when finished with using this program"
+loop
+   put"\nPlease enter the amount of children tickets sold: "..
+   get childticketnumber
+   exit when childticketnumber < 0
+   childtickettotal += childtickettotal + childticketnumber
+   put"Please enter the amount of adult tickets sold: "..
+   get adultticketnumber
+   exit when adultticketnumber < 0
+   adulttickettotal += adulttickettotal + adultticketnumber
+   put"Please enter the amount of senior tickets sold: "..
+   get seniorticketnumber
+   exit when seniorticketnumber <0
+   seniortickettotal += seniortickettotal + seniorticketnumber
+end loop
+put"There were ", childtickettotal, " child tickets sold, and the total is $", childtickettotal*childsingle, "."
+put"There were ", adulttickettotal, " adult tickets sold, and the total is $ ", adulttickettotal*adultsingle, "."
+put"There were ", seniortickettotal, " senior tickets sold, and the total is $ ", seniortickettotal*seniorsingle, "."
