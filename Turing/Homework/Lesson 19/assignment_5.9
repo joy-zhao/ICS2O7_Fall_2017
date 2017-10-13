@@ -1,0 +1,11 @@
+var number_1 : int
+loop
+    put "Please enter a non-zero integer: " ..
+    get number_1
+    if number_1 not= 0 then
+        put "The opposite of your input number is ", 
+        number_1*-1, ".\n"
+    else 
+        put "Your input is invalid, please enter a non-zero number! \n"
+    end if
+end loop
