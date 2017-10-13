@@ -1,0 +1,13 @@
+var integer : int
+var count_pos, count_neg : int :=0
+put "Please input a non-zero integer: "..
+get integer
+if integer>0 then
+    count_pos += 1
+elsif integer<0 then
+    count_neg += 1
+else 
+    put"Sorry, please enter a non-zero integer!"
+end if
+put"\nYou entered ", count_neg, " negative number(s) and ", count_pos, " postive number(s)."
+ 
