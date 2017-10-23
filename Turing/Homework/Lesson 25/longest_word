@@ -1,0 +1,11 @@
+var word : string
+var word_longer : string := ""
+put"Please enter ten words to check for the longest one."
+for i : 1..10
+    get input_1
+    if  then 
+        if length(word) > length(word_longer)
+        word_longer := input_1 
+    end if
+end for 
+put "The longest word in your sequence is “, word_longer, "."
