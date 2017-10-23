@@ -1,0 +1,11 @@
+var rows : int
+put "Please enter the amount of rows wanted: "..
+get rows
+loop
+for i : 1..rows
+    for a : i .. 1
+        put i * i
+    end for
+    put" "
+end for
+end loop
