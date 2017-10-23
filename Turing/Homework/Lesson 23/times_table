@@ -1,0 +1,13 @@
+const NUMBER : int := 10
+var number : int
+put "Enter any integer to find a times table. "
+get number
+if number > NUMBER  then
+    for count : 0 .. NUMBER
+        put count * number, ", " ..
+    end for
+    else
+        for count : 0 .. number
+            put count * number, "," ..
+        end for
+    end if
