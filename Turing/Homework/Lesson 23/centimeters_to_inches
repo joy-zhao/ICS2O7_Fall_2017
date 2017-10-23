@@ -1,0 +1,16 @@
+var cm, inches : real
+var answer : string
+const INTOCM := 2.5
+put "Do you want to convert cemtimeters to inches? " ..
+get answer
+if answer = "yes" then
+    put "Please enter a value for the number of centimeters: " ..
+    get cm
+    put cm, " is equal to ", (cm / INTOCM) / 100, "inches."
+elsif answer = "no" then
+    put "Please enter a value for the amount of inches: " ..
+    get inches
+    put inches, " is equal to ", inches * INTOCM / 12, "centimeters."
+else
+    put "Please enter yes or no. " ..
+end if
