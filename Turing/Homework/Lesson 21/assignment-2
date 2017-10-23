@@ -1,0 +1,18 @@
+var evenone, eventwo : int
+    put "\nPlease enter an even number "..
+    get evenone
+    put "Please enter a second even number "..
+    get eventwo
+    if eventwo mod 2 not= 0 or evenone mod 2 not= 0 then
+    put "Please re-input your numbers so that they are both even."
+    elsif evenone > eventwo then
+        for decreasing count : evenone .. eventwo by 2
+            put count, ""
+        end for
+    elsif evenone = eventwo then
+        put "Unfortunately there are no integers between those two numbers."
+    elsif evenone < eventwo then
+        for count : evenone .. eventwo by 2
+            put count, ""
+        end for
+    end if
