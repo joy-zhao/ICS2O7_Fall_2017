@@ -1,0 +1,14 @@
+var weight : real
+var TotalWeight, NumWeights : real := 0
+put "Please enter the weight of your packages, or the numeric value of zero when you are done: "
+loop
+    get weight
+    if weight = 0 then
+    put "The average weight of your packages is ", TotalWeight/NumWeights
+    elsif weight not= 0 then 
+    TotalWeight += weight
+    NumWeights += 1
+    else
+    put "Please enter a positive number! A weight cannot be negative!"
+    end if
+end loop
