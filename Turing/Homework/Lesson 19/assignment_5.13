@@ -1,23 +1,23 @@
-const childsingle := 10.00
-const adultsingle := 5.00 
-const seniorsingle := 7.50 
-var childticketnumber, adultticketnumber, seniorticketnumber : int 
-var childtickettotal, adulttickettotal, seniortickettotal : int := 0
+const cs := 10.00
+const as := 5.00 
+const ss := 7.50 
+var ctn, atn, stn : int 
+var ctt, att, stt : int := 0
 put "Please enter a negative number when finished with using this program"
 loop
    put"\nPlease enter the amount of children tickets sold: "..
-   get childticketnumber
-   exit when childticketnumber < 0
-   childtickettotal += childtickettotal + childticketnumber
+   get ctn
+   exit when ctn < 0
+   ctt += ctn
    put"Please enter the amount of adult tickets sold: "..
-   get adultticketnumber
-   exit when adultticketnumber < 0
-   adulttickettotal += adulttickettotal + adultticketnumber
+   get atn
+   exit when atn < 0
+   att += atn
    put"Please enter the amount of senior tickets sold: "..
-   get seniorticketnumber
-   exit when seniorticketnumber <0
-   seniortickettotal += seniortickettotal + seniorticketnumber
+   get stn
+   exit when stn <0
+   stt += stn
 end loop
-put"There were ", childtickettotal, " child tickets sold, and the total is $", childtickettotal*childsingle, "."
-put"There were ", adulttickettotal, " adult tickets sold, and the total is $ ", adulttickettotal*adultsingle, "."
-put"There were ", seniortickettotal, " senior tickets sold, and the total is $ ", seniortickettotal*seniorsingle, "."
+put"There were ", ctt, " child tickets sold, and the total is $", ctt*cs, "."
+put"There were ", att, " adult tickets sold, and the total is $ ", att*as, "."
+put"There were ", stt, " senior tickets sold, and the total is $ ", stt*ss, "."
