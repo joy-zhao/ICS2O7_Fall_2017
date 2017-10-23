@@ -1,0 +1,12 @@
+var LengthOfWords, NumberOfWords : int := 0
+var word : string
+put "Please enter a set of words! Input a number when you are done!"
+loop    
+    get word 
+    exit when strintok(word)
+    if length(word)>0 then
+        LengthOfWords += length(word)
+        NumberOfWords +=1
+    end if
+end loop
+put "The average length of your set of words is ", LengthOfWords/NumberOfWords, " characters."
