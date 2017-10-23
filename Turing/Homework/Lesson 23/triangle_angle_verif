@@ -1,0 +1,15 @@
+var angle_1, angle_2, angle_3 : real
+const SUMTRI := 180.00
+put "Please enter three angles, seperate them with a space: " ..
+get angle_1, angle_2, angle_3
+if (angle_1 + angle_2 + angle_3 = 180) and angle_1 <SUMTRI and angle_2<SUMTRI and angle_3 < SUMTRI and angle_1>0 and angle_2>0 and angle_3>0 then
+    if angle_1 = angle_2 and angle_2 = angle_3 then
+        put "This is an equilateral triangle."
+    elsif angle_1 = angle_2 or angle_1 = angle_3 or angle_2 = angle_3 then
+        put "This is an isoceles triangle."
+    else
+        put "This is a scalene triangle"
+    end if
+else 
+    put "Sorry, please enter a valid value for an angle of a triangle."
+end if
