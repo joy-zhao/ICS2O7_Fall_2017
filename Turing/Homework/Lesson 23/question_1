@@ -1,0 +1,11 @@
+var target : int
+const FOUR := 4
+put "Please enter a target integer: "
+get target
+put"The multiples of four less than ", target, " are: "..
+for i : 1 .. target
+    if i mod 4 = 0 then
+        put i, "," ..
+    else
+    end if
+end for
