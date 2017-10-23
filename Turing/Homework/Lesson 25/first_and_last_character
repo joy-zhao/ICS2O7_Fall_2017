@@ -1,0 +1,14 @@
+var input : string
+put "Please enter done when you are done." 
+put "Please enter a word: " ..
+loop
+    get input
+    exit when input = "done"
+    if strintok (input) then
+        put "Please enter a word, not a number!"
+    elsif length(input) < 2 then
+        put"Please enter a word with more than two letters!"
+    else
+        put "The first charcter is, ", input (1), " and the last character is ", input (*), ".\n"
+    end if
+end loop
