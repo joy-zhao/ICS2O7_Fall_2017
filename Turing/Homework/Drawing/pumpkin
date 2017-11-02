@@ -1,0 +1,64 @@
+
+drawfillmapleleaf(45,300,80,335,42)
+%backround
+drawfillbox(0,0,maxx,maxy, 28)
+drawfilloval (maxx-60, maxy-60, 40, 40, 30)
+drawfilloval (maxx-40, maxy-40, 30, 30, 28)
+%drawfilloval (maxx-70, maxy-64, 13, 16, 29)
+%drawfilloval (maxx-74, maxy-78, 10, 16, 28)
+%drawfilloval (maxx-68, maxy-50, 12, 13, 22)
+%drawfilloval (maxx-63, maxy-30, 13, 12, 26)
+%drawfilloval (maxx-72, maxy-50, 12, 16, 22)
+%drawfilloval (maxx-78, maxy-50, 13, 11, 23)
+%drawfilloval (maxx-80, maxy-50, 14, 13, 27)
+%drawfilloval (maxx-77, maxy-40, 13, 16, 28)
+%drawfilloval (maxx-40, maxy-48, 10, 16, 29)
+%drawfilloval (maxx-45, maxy-40, 12, 13, 22)
+%drawfilloval (maxx-43, maxy-36, 12, 16, 24)
+%drawfilloval (maxx-56, maxy-70, 13, 11, 28)
+%drawfilloval (maxx-41, maxy-55, 14, 13, 27)
+%drawoval (maxx-60, maxy-60, 40, 40, 30)
+
+%tree
+drawarc (230,100, 100, 190, 125, 210, 137) %left arc
+drawarc (-20,100, 100, 190, -30, 55,137) %right arc
+drawarc (170, 170, 45, 40, -130, 40, 137)
+drawarc (220, 235, 45, 40, -110, 42, 137) 
+drawarc (250, 315, 45, 50, -92, 68, 137) 
+drawarc (210, 358, 55, 40, 5, 110, 137)
+drawarc (50, 170, 45, 40, 190, 310, 137)
+drawfilloval (105, 100, 10, 30, 138)
+drawfillmapleleaf (275, 170, 305, 200, 42)%1
+drawfillmapleleaf (265, 120, 295, 150, 42)%2
+drawfillmapleleaf (185, 0, 210, 30, 42)%3
+drawfillmapleleaf (200, 0, 230, 30, 42)%3
+drawfillmapleleaf (215, 0, 245, 34, 42)%4
+drawfillmapleleaf (230, 0, 260, 25, 42)%5
+drawfillmapleleaf (245, 0, 275, 35, 42)%6
+drawfillmapleleaf (260, 0, 290, 36, 42)%7
+drawfillmapleleaf (275, 0, 315, 20, 42)%8
+drawfillmapleleaf (290, 0, 330, 31, 42)%9
+drawfillmapleleaf (265, 24, 295, 54, 42)%10
+drawfillmapleleaf (195, 22, 225, 52, 42)%11
+drawfillmapleleaf (230, 25, 260, 55, 42)%12
+
+%pumpkin
+drawfilloval(500, 40, 20, 40, 41)
+drawoval (500, 40, 20, 40, 16) 
+drawfilloval (520, 38, 20, 38, 41)
+drawoval (520, 38, 20, 38, 16)
+drawfilloval(480, 38, 20, 38, 41)
+drawoval (480, 38, 20, 38, 16)
+drawfilloval (540, 35, 20, 35, 41)
+drawoval(540, 35, 20, 35, 16)
+drawfilloval (460, 35, 20, 35, 41)
+drawoval (460, 35, 20, 35, 16)
+drawfilloval (470, 35, 20, 35, 41)
+drawoval (470, 35, 20, 35, 16)
+drawfilloval (530, 35, 20, 35, 41)
+drawoval (530, 35, 20, 35, 16)
+drawfilloval (500, 35, 22, 35, 41)
+drawoval (500, 35, 22, 35, 16)
+drawfillbox(496, 70, 504, 90, 144) 
+drawfillarc (496, 70, 30, 30, 140, 180, 144)
+Draw.ThickLine (496, 70, 468, 80, 1, 16)
