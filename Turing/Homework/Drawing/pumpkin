@@ -1,4 +1,5 @@
-
+%lonely pumpkin at night 
+setscreen("graphics")
 drawfillmapleleaf(45,300,80,335,42)
 %backround
 drawfillbox(0,0,maxx,maxy, 28)
@@ -18,10 +19,14 @@ drawfilloval (maxx-40, maxy-40, 30, 30, 28)
 %drawfilloval (maxx-56, maxy-70, 13, 11, 28)
 %drawfilloval (maxx-41, maxy-55, 14, 13, 27)
 %drawoval (maxx-60, maxy-60, 40, 40, 30)
+drawfillbox (maxx-160, maxy-90, maxx-110, maxy-60, white)
+drawfilloval (maxx-160, maxy-75, 30, 18, white)
+drawfilloval (maxx-130, maxy-60, 30, 18, white)
+drawfilloval (maxx-100, maxy-75, 30, 18, white)
 
 %tree
 drawarc (230,100, 100, 190, 125, 210, 137) %left arc
-drawarc (-20,100, 100, 190, -30, 55,137) %right arc
+drawarc (-20,100, 100, 190, -30, 55, 137) %right arc
 drawarc (170, 170, 45, 40, -130, 40, 137)
 drawarc (220, 235, 45, 40, -110, 42, 137) 
 drawarc (250, 315, 45, 50, -92, 68, 137) 
@@ -62,3 +67,9 @@ drawoval (500, 35, 22, 35, 16)
 drawfillbox(496, 70, 504, 90, 144) 
 drawfillarc (496, 70, 30, 30, 140, 180, 144)
 Draw.ThickLine (496, 70, 468, 80, 1, 16)
+
+%stars
+drawfillstar (maxx-55, maxy-40, maxx-45, maxy-30, white)
+drawfillstar (maxx-50, maxy-50, maxx-40, maxy-40, white)
+drawfillstar (maxx-30, maxy-30, maxx-20, maxy-20, white)
+
