@@ -1,0 +1,20 @@
+function IsAPalindrome(word : string) : boolean
+  var new_word : string := "" 
+for decreasing i : length(word) .. 1
+  new_word += word(i)
+end for
+if word = new_word then
+  result true
+else 
+  result false
+end if
+end IsAPalindrome 
+%main
+var word : string
+put " Please enter a word to check if it is a palindrome: " .. 
+get word
+if IsAPalindrome(word) then 
+  put "This word is a palindrome."
+else 
+  put "This word is not a palindrome."\
+end if
