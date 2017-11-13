@@ -1,0 +1,16 @@
+function Multipleof7 (number : int) : boolean
+  if number mod 7 = 0 
+    result true
+  else 
+    result false
+ end if
+end MultipleOf7
+
+%main program
+var number : int 
+randint(number, 1, 1000)
+if MultipleOf7 (number) then
+   put number, "is a multiple of seven."
+else 
+  put number, "is not a multiple of seven."
+end if
