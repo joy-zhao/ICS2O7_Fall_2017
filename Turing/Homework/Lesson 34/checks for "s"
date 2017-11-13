@@ -1,0 +1,16 @@
+function HasAnS(word : string)boolean
+	if word(1) = "s" or word(1)="S" then
+		result true
+	else 
+		result false
+	end if
+end HasAnS
+%main program
+var word : string
+put"Please enter a word to check if it starts with a s: "..
+get word 
+if HasAnS(word) then
+	put "Your word does start with a s."
+else 
+	put"Your word does not start with a s."
+end if
