@@ -1,0 +1,12 @@
+function double(number : real) : real
+loop
+  number *= 2
+  exit when number > 10 000 000
+end loop
+  result number
+end double
+
+var number : real 
+put "Please enter a number to double it: " ..
+get number 
+put double(number), " is your number doubled until it is larger than 10 000 000."
