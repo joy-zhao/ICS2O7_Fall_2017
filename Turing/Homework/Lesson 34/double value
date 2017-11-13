@@ -1,12 +1,13 @@
 function double(number : real) : real
-loop
-  number *= 2
-  exit when number > 10 000 000
-end loop
-  result number
+    result number * 2
 end double
 
+const EXITCONDITION := 100000.0
 var number : real 
-put "Please enter a number to double it: " ..
+put "Please enter a number to double it, or enter a negative integer to exit: " 
+loop 
+    
 get number 
-put double(number), " is your number doubled until it is larger than 10 000 000."
+    put double(number), " is your doubled number."
+    exit when double(number) > 50000
+end loop
