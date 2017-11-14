@@ -10,9 +10,13 @@ function reverse(string3 : string) : string
     result new_word
 end reverse
 
+function wordfinal(string1 : string, string2 : string, string3 : string) : string
+    result GlueString(reverse(GlueString(string1, string2)), string3)
+end wordfinal
+
+
 var string1, string2, string3 : string 
 var finalword : string := ""
 put"Please enter three strings separated by a space: "
 get string1, string2, string3
-finalword := GlueString(reverse(GlueString(string1, string2)), string3)
-put finalword, " is your output." 
+put wordfinal(string1, string2, string3), " is your output." 
