@@ -1,16 +1,33 @@
-function Multipleof7 (number : int) : boolean
-  if number mod 7 = 0 
-    result true
-  else 
-    result false
- end if
+function MultipleOf7 (number : int) : boolean
+    if number mod 7 = 0 then
+        result true
+    else
+        result false
+    end if
 end MultipleOf7
 
 %main program
-var number : int 
-randint(number, 1, 1000)
-if MultipleOf7 (number) then
-   put number, "is a multiple of seven."
-else 
-  put number, "is not a multiple of seven."
-end if
+var number, numb_exec : int
+var execution : string
+put "How many numbers do you want to check for? " ..
+get execution
+loop
+    if strintok (execution) then
+        numb_exec := strint (execution)
+        if numb_exec < 0 then
+            put "Please enter a positive number!!"
+        else 
+            exit 
+        end if
+    else
+        put "Please enter a number!!"
+    end if
+end loop
+    for i : 1 .. numb_exec
+        randint (number, 1, 1000)
+        if MultipleOf7 (number) then
+            put number, " is a multiple of seven."
+        else
+            put number, " is not a multiple of seven."
+        end if
+    end for
