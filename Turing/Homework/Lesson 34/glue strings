@@ -1,0 +1,18 @@
+function GlueString(string1 : string, string2 : string) : string
+    result string1 + string2
+end GlueString
+
+function reverse(string3 : string) : string
+    var new_word : string := ""
+    for decreasing i : length(string3) .. 1
+        new_word += string3(i)
+    end for
+    result new_word
+end reverse
+
+var string1, string2, string3 : string 
+var finalword : string := ""
+put"Please enter three strings separated by a space: "
+get string1, string2, string3
+finalword := GlueString(reverse(GlueString(string1, string2)), string3)
+put finalword, " is your output." 
