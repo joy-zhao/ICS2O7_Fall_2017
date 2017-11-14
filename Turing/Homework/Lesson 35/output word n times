@@ -1,0 +1,9 @@
+procedure output(n : int, word : string )
+  for i : 1.. n 
+    put word
+  end for
+end output
+
+const WORD := GORILAAA
+const N := 12
+output(N, WORD)
