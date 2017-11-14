@@ -16,5 +16,5 @@ get word
 if IsAPalindrome(word) then 
   put "This word is a palindrome."
 else 
-  put "This word is not a palindrome."\
+  put "This word is not a palindrome."
 end if
