@@ -1,0 +1,19 @@
+procedure stars(line_number : int)
+    for i : 1 .. line_number
+        put "*****"
+    end for
+end stars
+
+var line_number : int
+var number : int := 0
+put "How many lines do you wish to have? "..
+get line_number 
+if strintok(line_number) then
+  number := strint(line_number)
+    if number > 0 then
+      stars(line_number)
+    else 
+      put "Please enter a positive number!"
+    end if
+end if
+
