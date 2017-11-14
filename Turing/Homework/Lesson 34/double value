@@ -1,13 +1,19 @@
 function double(number : real) : real
-    result number * 2
+    const EXITCONDITION := 100000.0
+    var count : int := 0
+    loop
+        result number *= 2
+        count += 1
+        put count 
+        exit when number > EXITCONDITION
+    end loop
 end double
 
-const EXITCONDITION := 100000.0
+
 var number : real 
 put "Please enter a number to double it, or enter a negative integer to exit: " 
-loop 
+
     
 get number 
-    put double(number), " is your doubled number."
-    exit when double(number) > 50000
-end loop
+put double(number), " is your number doubled times"
+
