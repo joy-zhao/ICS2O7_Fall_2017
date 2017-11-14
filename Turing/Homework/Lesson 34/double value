@@ -3,17 +3,21 @@ function double(number : real) : real
     var count : int := 0
     loop
         result number *= 2
-        count += 1
-        put count 
         exit when number > EXITCONDITION
     end loop
 end double
-
+function count(number : real) : real
+    const EXITCONDITION := 100000.0
+    var count : int := 0
+    loop
+        number *= 2
+        count += 1
+        exit when number > EXITCONDITION
+    end loop
+    result count
+end double
 
 var number : real 
-put "Please enter a number to double it, or enter a negative integer to exit: " 
-
-    
+put "Please enter a number to double it: " 
 get number 
-put double(number), " is your number doubled times"
-
+put double(number), " is your number doubled, " count(number), " times."
