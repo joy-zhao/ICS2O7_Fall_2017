@@ -17,3 +17,4 @@ var a1, a2,a3  : int
 put "Please enter three angles to check for the nature of that triangle"
 get a1, a2, a3
 triangle(a1,a2,a3)
+%can use array to get
