@@ -16,4 +16,4 @@ for a : 1.. 10000
     if isArmstrong(a) then
         put a
     end if
-end for.
+end for
