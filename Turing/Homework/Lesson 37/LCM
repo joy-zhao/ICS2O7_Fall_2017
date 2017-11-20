@@ -1,0 +1,23 @@
+function GCF (n1 : int, n2 : int) : int
+    var storage : int := 0
+    var a : int := n1
+    var b : int := n2
+    loop
+        exit when b = 0
+        storage := b
+        b := a mod b
+        a := storage
+   end loop
+   result a
+end GCF
+
+function LCM (n1 : int, n2: int) : real
+    var lcm : real := 0.0
+    lcm := (n1*n2)/(GCF(n1, n2))
+     result lcm
+end LCM
+    
+var ar : array 1..2 of int
+put "Please enter two numbers to find the LCM, each separated by the return key:"
+get ar(1), ar(2)
+put "The LCM of ", ar(1), " and ", ar(2), " is ", LCM(ar(1), ar(2)), "."
