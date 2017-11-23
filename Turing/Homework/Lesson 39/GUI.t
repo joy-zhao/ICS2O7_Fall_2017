@@ -7,17 +7,17 @@ procedure echoTextField (textFieldContents : string)
     var message : real
     var new_message : string
     message := strreal(textFieldContents) / 2.54
-    new_message := realstr(message,0)
+    new_message := realstr(message,0) + " inches."
     GUI.SetText(textField2, new_message)
 end echoTextField
 
 procedure setTextField (textFieldContents : string)
-    var message : int
+    var message : real
     var new_message : string
     var input : string
     input := GUI.GetText(textField1)
     message := strreal(textFieldContents) div 2.54
-    new_message := intstr(message)
+    new_message := realstr(message,0) + " inches."
     GUI.SetText(textField2, new_message)
 end setTextField
     
