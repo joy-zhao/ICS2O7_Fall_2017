@@ -1,0 +1,34 @@
+import GUI
+var textField1, textField2 : int
+var textFieldLabel : int
+var quitButton : int
+
+procedure echoTextField (textFieldContents : string)
+    var message : int
+    var new_message : string
+    message := strint(textFieldContents) div 2.54
+    new_message := intstr(message)
+    GUI.SetText(textField2, new_message)
+end echoTextField
+
+procedure setTextField (textFieldContents : string)
+    var message : int
+    var new_message : string
+    var input : string
+    input := GUI.GetText(textField1)
+    message := strreal(textFieldContents) div 2.54
+    new_message := intstr(message)
+    GUI.SetText(textField2, new_message)
+end setTextField
+    
+textField1 := GUI.CreateTextField (10, 30, 200, " cm", echoTextField)
+quitButton := GUI.CreateButton (300, 30, 80, "Quit", GUI.Quit)
+
+textFieldLabel := GUI.CreateLabel(10, 100 +  GUI.GetHeight (textField1), "Please enter your value in centimetres:")
+
+textField2 := GUI.CreateTextField (10, 30, 200, " in", setTextField)
+
+quitButton := GUI.CreateButton (300, 30, 80, "Quit", GUI.Quit)
+loop
+    exit when GUI.ProcessEvent
+end loop
