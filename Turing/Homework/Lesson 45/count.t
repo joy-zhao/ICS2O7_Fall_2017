@@ -3,7 +3,7 @@ var count : array 1.. 12 of int
 var input : string
 
 for i : 1..10 
-    put"Please enter a name of objec6 : "..
+    put"Please enter a name of objet : "..
     get name (i)
     put"Please enter the amount of uhat object: "..
     get count (i)
