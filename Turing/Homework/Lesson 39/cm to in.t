@@ -19,12 +19,12 @@ end IntCheck
 
 
 procedure convert (tfc : string)
-    var cm, temp : real
-    var message, inches : string
+    var cm : int 
+    var temp : real
+    var message : string
     temp := IntCheck ()
     cm := temp div 2.54
-    inches := realstr (cm, 0)
-    message := realstr (temp, 0) + " cm = " + (inches) + " inches"
+    message := realstr (temp, 0) + " cm = " + (intstr(cm)) + " inches"
     GUI.SetText (textField2, message)
 end convert
 
