@@ -1,5 +1,5 @@
 import GUI
-var quitButton, convertButton, textField1, textField2 : int
+var quitButton, convertButton, textField1, textField2, tf1Label, tf2Label : int
 
 function IntCheck () : real
     var number : string
@@ -36,10 +36,13 @@ procedure quitPro
     GUI.Quit
 end quitPro
 
-quitButton := GUI.CreateButton (10, 100, 80, "quit", quitPro)
-convertButton := GUI.CreateButton (300, 100, 80, "Convert", convertButtonpro)
-textField1 := GUI.CreateTextField (100, 50, 200, "Enter a value in cm", convert)
-textField2 := GUI.CreateTextField (100, 200, 200, "", convert)
+quitButton := GUI.CreateButton (10, 125, 80, "quit", quitPro)
+convertButton := GUI.CreateButton (300, 125, 80, "Convert", convertButtonpro)
+textField1 := GUI.CreateTextField (100, 175, 200, "", convert)
+textField2 := GUI.CreateTextField (100, 75, 200, "", convert)
+tf1Label := GUI.CreateLabel (100, 195, "Please enter a value in cm: ")
+tf2Label := GUI.CreateLabel (100, 95, "Converted to inches is: ")
+
 
 loop
     exit when GUI.ProcessEvent
