@@ -1,0 +1,46 @@
+import GUI
+var quitButton, convertButton, textField1, textField2, tf1Label, tf2Label : int
+const ONE := 1.00
+function IntCheck () : real
+    var number : string
+    loop
+        if not(GUI.ProcessEvent) then
+            number := GUI.GetText (textField1)
+            if strrealok (number) then
+                result strreal (number)
+            elsif strintok (number) then
+                result (0.0 + strint(number))
+            else
+                GUI.SetText (textField2, "Please enter a NUMBER!")
+            end if
+        end if
+    end loop
+end IntCheck
+
+
+procedure convert (tfc : real)
+    var message : string
+    tfc := IntCheck()
+    message := realstr (ONE + input,0)
+    GUI.SetText (textField2, message)
+end convert
+
+procedure convertButtonpro
+    convert (GUI.GetText (textField1))
+end convertButtonpro
+
+procedure quitPro
+    GUI.Quit
+end quitPro
+
+quitButton := GUI.CreateButton (10, 125, 80, "quit", quitPro)
+convertButton := GUI.CreateButton (300, 125, 80, "Up a whole", convertButtonpro)
+textField1 := GUI.CreateTextField (100, 175, 200, "", convert)
+textField2 := GUI.CreateTextField (100, 75, 200, "", convert)
+tf1Label := GUI.CreateLabel (100, 195, "Please enter a number: ")
+tf2Label := GUI.CreateLabel (100, 95, "One higher than that is: ")
+
+
+loop
+    exit when GUI.ProcessEvent
+end loop
