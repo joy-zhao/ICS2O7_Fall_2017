@@ -1,0 +1,38 @@
+var quitButton, resources, descriptions, titles, duties, employers, wages, outlook, requirements : int
+
+
+procedure quit.p
+    cls
+    GUI.Quit
+end quit.p
+
+procedure resources.p
+end resources.p
+
+procedure descriptions.p
+end descriptions.p
+
+procedure titles.p
+end titles.p
+
+procedure duties.p
+end duties.p
+
+procedure employers.p
+end employers.p
+
+procedure wages.p
+end wages.p
+
+procedure outlook.p
+end outlook.p
+
+procedure requirements.p
+end requirements.p
+
+quitButton 
+
+
+loop
+    exit when GUI.ProcessEvent
+end loop
